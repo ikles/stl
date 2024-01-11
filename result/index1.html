@@ -1,0 +1,800 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1920px"-->
+  <title>Const</title>    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="css/main1.css">
+  <link rel="stylesheet" href="css/main2.css">
+  
+</head>
+<body>  
+
+  <style>  
+
+
+
+    html {
+      font-family: Roboto, sans-serif;
+      font-size: 20px;
+      font-family: 'Mazzard M', sans-serif; 
+    }
+
+    .wrapper {
+      width: 1300px;          
+      font-weight: 400;
+      color: #000;
+      font-size: 15px;            
+      font-family: 'Rubik', sans-serif;
+      
+    }
+    .contain {  
+      margin-right: auto;
+      margin-left: auto;
+      /*
+      width: 1170px;*/
+      /*1199*/
+      width: 1200px 
+
+      /*992
+      width: 708px 
+      */
+
+      /*570
+      width: 100%
+      padding-left: 20px
+      padding-right: 20px
+      */
+    }
+
+
+
+
+    .bottom-wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding-bottom: 50px;
+    }
+
+
+    .dop-info .contain {
+      position: relative;
+    }
+
+    .wrapper .contain{
+      width: 1800px;
+    }
+    .wrapper {
+      width: 1920px;
+      zoom: 0.7;
+    }
+
+    .h2 {
+      color: rgb(0, 0, 0); font-size: 64px; font-weight: 700; margin-bottom: 50px;
+    }
+
+
+  </style>
+
+  <script>
+
+    let project = document.querySelector('title').textContent;
+    console.log(project)
+  </script>
+
+
+<div class="wrapper bord"><div class="header" style="background-image: url(&quot;img/index-header-bg.jpg&quot;); background-repeat: no-repeat; background-position: left center; padding-bottom: 0px;"><div class="top" style="padding-top: 22px; padding-bottom: 44px;"><div class="contain"><div class="top__row" style="display: flex; align-items: center;"><a class="logo" style="display: inline-block; flex: 0 0 auto; margin-right: 119px;"><img src="img/logo.png"></a><div class="top__menus"><ul class="top__mnu-1" style="display: flex;"><li class="mnu1__li" style="margin-right: 72px;"><a class="mnu1__a-active" style="font-size: 20px;color: #0773BD;">О компании</a></li><li class="mnu1__li" style="margin-right: 72px;"><a class="mnu1__a" style="color: rgb(0, 0, 0); font-size: 20px;">Импортозамещение</a></li><li class="mnu1__li" style="margin-right: 72px;"><a class="mnu1__a" style="color: rgb(0, 0, 0); font-size: 20px;">Партнеры и Заказчики</a></li><li class="mnu1__li" style="margin-right: 72px;"><a class="mnu1__a" style="color: rgb(0, 0, 0); font-size: 20px;">Контакты</a></li></ul><ul class="top__mnu-2" style="display: flex; margin-top: 29px;"><li class="top__mnu-2-li" style="margin-right: 116px; background-image: url(&quot;img/mnu-arrow.svg&quot;); background-repeat: no-repeat; background-position: right 0px center; padding-right: 30px; position: relative;"><a class="top__mnu-2-a-hover" style="color: rgb(7, 115, 189); font-size: 20px; font-weight: 600;">Услуги и Решения</a><ul class="mnu__cild" style="position: absolute; padding: 15px 39px 33px; border-radius: 15px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px; opacity: 0;"><li class="mnu__cild-li" style="margin-bottom: 10px; flex: 0 0 auto;"><a class="mnu__cild-a" style="color: rgb(0, 0, 0);font-size: 20px;line-height: 1.2;white-space: nowrap;">Инфраструктурные решения</a></li><li class="mnu__cild-li" style="margin-bottom: 10px; flex: 0 0 auto;"><a class="mnu__cild-a" style="color: rgb(0, 0, 0);font-size: 20px;line-height: 1.2;white-space: nowrap;">Телекоммуникационные решения</a></li><li class="mnu__cild-li" style="margin-bottom: 10px; flex: 0 0 auto;"><a class="mnu__cild-a" style="color: rgb(0, 0, 0);font-size: 20px;line-height: 1.2;white-space: nowrap;">Информационная безопасность</a></li><li class="mnu__cild-li" style="margin-bottom: 10px; flex: 0 0 auto;"><a class="mnu__cild-a" style="color: rgb(0, 0, 0);font-size: 20px;line-height: 1.2;white-space: nowrap;">Системы электронного документооборота</a></li><li class="mnu__cild-li" style="margin-bottom: 10px; flex: 0 0 auto;"><a class="mnu__cild-a" style="color: rgb(0, 0, 0);font-size: 20px;line-height: 1.2;white-space: nowrap;">Корпоративные порталы </a></li><li class="mnu__cild-li" style="margin-bottom: 10px; flex: 0 0 auto;"><a class="mnu__cild-a" style="color: rgb(0, 0, 0);font-size: 20px;line-height: 1.2;white-space: nowrap;">Корпоративные хранилища данных</a></li><li class="mnu__cild-li" style="margin-bottom: 10px; flex: 0 0 auto;"><a class="mnu__cild-a" style="color: rgb(0, 0, 0);font-size: 20px;line-height: 1.2;white-space: nowrap;">BI Аналитика данных</a></li><li class="mnu__cild-li" style="margin-bottom: 10px; flex: 0 0 auto;"><a class="mnu__cild-a" style="color: rgb(0, 0, 0);font-size: 20px;line-height: 1.2;white-space: nowrap;">Системы Big Data </a></li></ul></li><li class="top__mnu-2-li" style="margin-right: 116px; background-image: url(&quot;img/mnu-arrow.svg&quot;); background-repeat: no-repeat; background-position: right 0px center; padding-right: 30px;"><a class="top__mnu-2-a" style="color: rgb(0, 0, 0); font-size: 20px; font-weight: 600;">Направления</a></li><li class="top__mnu-2-li" style="margin-right: 116px; background-image: url(&quot;img/mnu-arrow.svg&quot;); background-repeat: no-repeat; background-position: right 0px center; padding-right: 30px;"><a class="top__mnu-2-a" style="color: rgb(0, 0, 0); font-size: 20px; font-weight: 600;">Отрасли</a></li></ul></div><a class="top__phone" style="color: rgb(0, 0, 0); font-size: 24px; font-weight: 600; margin-left: auto; flex: 0 0 auto;">+7 (499) 703-41-91
+</a></div></div></div><div class="banner" style="padding-top: 45px; padding-bottom: 123px;"><div class="contain"><h1 style="color: rgb(0, 0, 0); font-size: 96px; font-weight: 700; margin-bottom: 11px;" class="banner__h1">Надежный Российский ИТ-Интегратор</h1><div class="banner_subtitle" style="color: rgb(7, 115, 189); font-size: 48px; font-weight: 500;">Цифровая трансформация и импортозамещение
+</div><div class="topcats__row" style="margin-top: 132px; display: flex; gap: 30px;"><a class="topcats__item tm-1" style="width: 16.6666%; display: flex; flex-direction: column; border-radius: 15px; background: rgb(234, 247, 253); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px; padding: 40px 27px 36px;"><div class="topcats__img-w" style="margin-bottom: 34px;"><img src="img/tcats-1.svg"></div><div class="topcats__text" style="color: rgb(0, 0, 0); font-size: 20px; font-weight: 600;">Инфраструктурные решения
+</div></a><a class="topcats__item tm-2 hover" style="width: 16.6666%; display: flex; flex-direction: column; border-radius: 15px; background: rgb(199, 232, 249); box-shadow: 0px 0px 30px 0px #3AEAF7; padding: 40px 27px 36px;"><div class="topcats__img-w" style="margin-bottom: 34px;"><img src="img/tcats-2.svg"></div><div class="topcats__text" style="color: rgb(0, 0, 0); font-size: 20px; font-weight: 600;">Телекоммуникационные решения
+</div></a><a class="topcats__item tm-3" style="width: 16.6666%; display: flex; flex-direction: column; border-radius: 15px; background: rgb(141, 211, 245); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px; padding: 40px 27px 36px;"><div class="topcats__img-w" style="margin-bottom: 34px;"><img src="img/tcats-3.svg"></div><div class="topcats__text" style="color: rgb(0, 0, 0); font-size: 20px; font-weight: 600;">Телекоммуникационные решения
+</div></a><a class="topcats__item tm-4" style="width: 16.6666%; display: flex; flex-direction: column; border-radius: 15px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px; padding: 40px 27px 36px;"><div class="topcats__img-w" style="margin-bottom: 34px;"><img src="img/tcats-4.svg"></div><div class="topcats__text" style="color: rgb(0, 0, 0); font-size: 20px; font-weight: 600;">Системы электронного документооборота
+</div></a><a class="topcats__item tm-5" style="width: 16.6666%; display: flex; flex-direction: column; border-radius: 15px; background: rgb(167, 249, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px; padding: 40px 27px 36px;"><div class="topcats__img-w" style="margin-bottom: 34px;"><img src="img/tcats-5.svg"></div><div class="topcats__text" style="color: rgb(0, 0, 0); font-size: 20px; font-weight: 600;">Корпоративные порталы
+</div></a><a class="topcats__item tm-6" style="width: 16.6666%; display: flex; flex-direction: column; border-radius: 15px; background: rgb(217, 237, 249); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px; padding: 40px 27px 36px;"><div class="topcats__img-w" style="margin-bottom: 34px;"><img src="img/tcats-6.svg"></div><div class="topcats__text" style="color: rgb(0, 0, 0); font-size: 20px; font-weight: 600;">Корпоративные хранилища данных
+</div></a></div></div></div></div><div class="about" style="padding-top: 99px; padding-bottom: 0px;"><div class="contain"><div class="about__row" style="display: flex; gap: 33px; margin-bottom: 0px; padding-bottom: 41px;"><div class="about__l" style="width: 35%;"><h1 style="margin-bottom: 100px; color: rgb(0, 0, 0); font-size: 96px; font-weight: 700;" class="about__h1">О компании</h1><p style="color: rgb(0, 0, 0); font-size: 32px; line-height: 1.2;" class="p">Разработка, внедрение и поддержка сложных информационных систем и инфраструктурных решений федерального и регионального значения. Развитие и адаптация передовых технологий с учетом текущих и перспективных потребностей Заказчиков.
+
+</p></div><div class="about__r" style="width: 65%;"><p style="color: rgb(0, 0, 0); font-size: 28px; line-height: 1.4;" class="p">
+
+Все работы, выполняемые&nbsp; «СТИ ИНЖИНИРИНГ», осуществляются в соответствии с государственными стандартами и требованиями регулирующих органов в области построения информационных систем. «СТИ ИНЖИНИРИНГ» входит в реестр аккредитованных организаций, осуществляющих деятельность в области информационных технологий.
+
+</p><p style="border-radius: 15px; background: rgb(199, 232, 249); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px; padding: 30px 36px 26px; color: rgb(0, 0, 0); font-size: 32px; font-weight: 600; line-height: 1.4;" class="bloq">Одним из преимуществ компании «СТИ ИНЖИНИРИНГ» является большой опыт в области создания и сопровождения сложных систем федерального масштаба, в том числе опыт реализации проектов в области информационной безопасности
+</p></div></div><div class="res" style="padding-top: 41px;"><div class="res__row" style="display: flex; margin-bottom: 66px; align-items: center;"><div class="res__l" style="border-right: 1px solid #949494;"><h2 style="color: rgb(0, 0, 0); font-size: 64px; font-weight: 700; margin-bottom: 0px;" class="h2 res__h2">СОЗДАЕМ IT-РЕШЕНИЯ, КОТОРЫЕ ПРИНОСЯТ ИЗМЕРИМЫЙ РЕЗУЛЬТАТ
+</h2></div><div class="res__r" style="padding-left: 57px;"><p style="color: rgb(0, 0, 0); font-size: 28px; line-height: 1.4;" class="p">Ежедневно мы помогаем крупнейшим компаниям страны ответить на вопросы о развитии бизнеса и ключевых бизнес-процессов.
+</p></div></div><div class="res__items" style="display: flex; flex-wrap: wrap; margin-left: -17px; margin-right: -17px; padding-bottom: 19px;"><a class="resitem" style="display: flex; align-items: center; width: 25%; padding-left: 17px; padding-right: 17px; margin-top: 42px; margin-bottom: 42px;"><div class="resitem__img-w" style="width: 76px; flex: 0 0 auto;"><img src="img/res-1.svg" class="resitem__img" style="max-width: 100%;"></div><div class="resitem__text-hover" style="padding-left: 51px; color: rgb(7, 115, 189); font-size: 24px; font-weight: 600;">Инфраструктурные решения
+</div></a><a class="resitem" style="display: flex; align-items: center; width: 25%; padding-left: 17px; padding-right: 17px; margin-top: 42px; margin-bottom: 42px;"><div class="resitem__img-w" style="width: 76px; flex: 0 0 auto;"><img src="img/res-2.svg" class="resitem__img" style="max-width: 100%;"></div><div class="resitem__text" style="padding-left: 51px; color: rgb(0, 0, 0); font-size: 24px; font-weight: 600;">Инфраструктурные решения
+</div></a><a class="resitem" style="display: flex; align-items: center; width: 25%; padding-left: 17px; padding-right: 17px; margin-top: 42px; margin-bottom: 42px;"><div class="resitem__img-w" style="width: 76px; flex: 0 0 auto;"><img src="img/res-3.svg" class="resitem__img" style="max-width: 100%;"></div><div class="resitem__text" style="padding-left: 51px; color: rgb(0, 0, 0); font-size: 24px; font-weight: 600;">Инфраструктурные решения
+</div></a><a class="resitem" style="display: flex; align-items: center; width: 25%; padding-left: 17px; padding-right: 17px; margin-top: 42px; margin-bottom: 42px;"><div class="resitem__img-w" style="width: 76px; flex: 0 0 auto;"><img src="img/res-4.svg" class="resitem__img" style="max-width: 100%;"></div><div class="resitem__text" style="padding-left: 51px; color: rgb(0, 0, 0); font-size: 24px; font-weight: 600;">Инфраструктурные решения
+</div></a><a class="resitem" style="display: flex; align-items: center; width: 25%; padding-left: 17px; padding-right: 17px; margin-top: 42px; margin-bottom: 42px;"><div class="resitem__img-w" style="width: 76px; flex: 0 0 auto;"><img src="img/res-5.svg" class="resitem__img" style="max-width: 100%;"></div><div class="resitem__text" style="padding-left: 51px; color: rgb(0, 0, 0); font-size: 24px; font-weight: 600;">Инфраструктурные решения
+</div></a><a class="resitem" style="display: flex; align-items: center; width: 25%; padding-left: 17px; padding-right: 17px; margin-top: 42px; margin-bottom: 42px;"><div class="resitem__img-w" style="width: 76px; flex: 0 0 auto;"><img src="img/res-6.svg" class="resitem__img" style="max-width: 100%;"></div><div class="resitem__text" style="padding-left: 51px; color: rgb(0, 0, 0); font-size: 24px; font-weight: 600;">Инфраструктурные решения
+</div></a><a class="resitem" style="display: flex; align-items: center; width: 25%; padding-left: 17px; padding-right: 17px; margin-top: 42px; margin-bottom: 42px;"><div class="resitem__img-w" style="width: 76px; flex: 0 0 auto;"><img src="img/res-7.svg" class="resitem__img" style="max-width: 100%;"></div><div class="resitem__text" style="padding-left: 51px; color: rgb(0, 0, 0); font-size: 24px; font-weight: 600;">Инфраструктурные решения
+</div></a><a class="resitem" style="display: flex; align-items: center; width: 25%; padding-left: 17px; padding-right: 17px; margin-top: 42px; margin-bottom: 42px;"><div class="resitem__img-w" style="width: 76px; flex: 0 0 auto;"><img src="img/res-8.svg" class="resitem__img" style="max-width: 100%;"></div><div class="resitem__text" style="padding-left: 51px; color: rgb(0, 0, 0); font-size: 24px; font-weight: 600;">Инфраструктурные решения
+</div></a></div></div></div></div><div class="direct" style="padding-top: 61px; padding-bottom: 91px;"><div class="contain"><h2 style="color: rgb(0, 0, 0); font-size: 64px; font-weight: 700; margin-bottom: 50px;" class="h2">Направления
+</h2><div class="direct__row"><a class="direct__item-hover" style="display: flex; align-items: center; padding: 18px 25px 23px; border-radius: 24.844px; background: rgb(199, 232, 249); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 49.688px 0px; margin-bottom: 23px;"><div class="direct__img-w" style="width: 159px; height: 143px; flex: 0 0 auto; border-radius: 24.844px; margin-right: 58px; overflow: hidden;"><img src="img/direct-1.jpg" style="object-fit: cover; width: 100%; height: 100%;"></div><div class="direct__title" style="color: rgb(20, 20, 20); font-size: 32px; font-weight: 600; width: 40%; flex: 0 0 auto;">Монтаж компьютерных и телефонных сетей</div><div class="direct__text" style="padding-left: 41px; color: rgb(0, 0, 0); font-size: 24px; line-height: 1.3; flex: 1 1 auto;">
+Заметное событие в отрасли информационной безопасности, благодаря высокой деловой репутации и её членов, компаний-лидеров рынка и лучших экспертов.</div></a><a class="direct__item" style="display: flex; align-items: center; padding: 18px 25px 23px; border-radius: 24.844px; background: rgb(246, 246, 246); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 49.688px 0px; margin-bottom: 23px;"><div class="direct__img-w" style="width: 159px; height: 143px; flex: 0 0 auto; border-radius: 24.844px; margin-right: 58px; overflow: hidden;"><img src="img/direct-2.jpg" style="object-fit: cover; width: 100%; height: 100%;"></div><div class="direct__title" style="color: rgb(20, 20, 20); font-size: 32px; font-weight: 600; width: 40%; flex: 0 0 auto;">Решение вопросов информационной безопасности</div><div class="direct__text" style="padding-left: 41px; color: rgb(0, 0, 0); font-size: 24px; line-height: 1.3; flex: 1 1 auto;">
+Заметное событие в отрасли информационной безопасности, благодаря высокой деловой репутации и её членов, компаний-лидеров рынка и лучших экспертов.</div></a><a class="direct__item" style="display: flex; align-items: center; padding: 18px 25px 23px; border-radius: 24.844px; background: rgb(246, 246, 246); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 49.688px 0px; margin-bottom: 23px;"><div class="direct__img-w" style="width: 159px; height: 143px; flex: 0 0 auto; border-radius: 24.844px; margin-right: 58px; overflow: hidden;"><img src="img/direct-3.jpg" style="object-fit: cover; width: 100%; height: 100%;"></div><div class="direct__title" style="color: rgb(20, 20, 20); font-size: 32px; font-weight: 600; width: 40%; flex: 0 0 auto;">Поставка серверов, систем хранения данных и систем резервного копирования</div><div class="direct__text" style="padding-left: 41px; color: rgb(0, 0, 0); font-size: 24px; line-height: 1.3; flex: 1 1 auto;">
+Заметное событие в отрасли информационной безопасности, благодаря высокой деловой репутации и её членов, компаний-лидеров рынка и лучших экспертов.</div></a><a class="direct__item" style="display: flex; align-items: center; padding: 18px 25px 23px; border-radius: 24.844px; background: rgb(246, 246, 246); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 49.688px 0px; margin-bottom: 23px;"><div class="direct__img-w" style="width: 159px; height: 143px; flex: 0 0 auto; border-radius: 24.844px; margin-right: 58px; overflow: hidden;"><img src="img/direct-4.jpg" style="object-fit: cover; width: 100%; height: 100%;"></div><div class="direct__title" style="color: rgb(20, 20, 20); font-size: 32px; font-weight: 600; width: 40%; flex: 0 0 auto;">Проектирование, монтаж систем видеонаблюдения, систем учета рабочего времени, систем контроля доступа</div><div class="direct__text" style="padding-left: 41px; color: rgb(0, 0, 0); font-size: 24px; line-height: 1.3; flex: 1 1 auto;">
+Заметное событие в отрасли информационной безопасности, благодаря высокой деловой репутации и её членов, компаний-лидеров рынка и лучших экспертов.</div></a><a class="direct__item" style="display: flex; align-items: center; padding: 18px 25px 23px; border-radius: 24.844px; background: rgb(246, 246, 246); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 49.688px 0px; margin-bottom: 23px;"><div class="direct__img-w" style="width: 159px; height: 143px; flex: 0 0 auto; border-radius: 24.844px; margin-right: 58px; overflow: hidden;"><img src="img/direct-5.jpg" style="object-fit: cover; width: 100%; height: 100%;"></div><div class="direct__title" style="color: rgb(20, 20, 20); font-size: 32px; font-weight: 600; width: 40%; flex: 0 0 auto;">Подбор и поставка необходимого оборудования</div><div class="direct__text" style="padding-left: 41px; color: rgb(0, 0, 0); font-size: 24px; line-height: 1.3; flex: 1 1 auto;">
+Заметное событие в отрасли информационной безопасности, благодаря высокой деловой репутации и её членов, компаний-лидеров рынка и лучших экспертов.</div></a><a class="direct__item" style="display: flex; align-items: center; padding: 18px 25px 23px; border-radius: 24.844px; background: rgb(246, 246, 246); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 49.688px 0px; margin-bottom: 23px;"><div class="direct__img-w" style="width: 159px; height: 143px; flex: 0 0 auto; border-radius: 24.844px; margin-right: 58px; overflow: hidden;"><img src="img/direct-6.jpg" style="object-fit: cover; width: 100%; height: 100%;"></div><div class="direct__title" style="color: rgb(20, 20, 20); font-size: 32px; font-weight: 600; width: 40%; flex: 0 0 auto;">Внедрение электронных систем документооборота и средств коллективной работы</div><div class="direct__text" style="padding-left: 41px; color: rgb(0, 0, 0); font-size: 24px; line-height: 1.3; flex: 1 1 auto;">
+Заметное событие в отрасли информационной безопасности, благодаря высокой деловой репутации и её членов, компаний-лидеров рынка и лучших экспертов.</div></a><a class="direct__item" style="display: flex; align-items: center; padding: 18px 25px 23px; border-radius: 24.844px; background: rgb(246, 246, 246); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 49.688px 0px; margin-bottom: 23px;"><div class="direct__img-w" style="width: 159px; height: 143px; flex: 0 0 auto; border-radius: 24.844px; margin-right: 58px; overflow: hidden;"><img src="img/direct-7.jpg" style="object-fit: cover; width: 100%; height: 100%;"></div><div class="direct__title" style="color: rgb(20, 20, 20); font-size: 32px; font-weight: 600; width: 40%; flex: 0 0 auto;">Автоматизация учета</div><div class="direct__text" style="padding-left: 41px; color: rgb(0, 0, 0); font-size: 24px; line-height: 1.3; flex: 1 1 auto;">
+Заметное событие в отрасли информационной безопасности, благодаря высокой деловой репутации и её членов, компаний-лидеров рынка и лучших экспертов.</div></a><a class="direct__item" style="display: flex; align-items: center; padding: 18px 25px 23px; border-radius: 24.844px; background: rgb(246, 246, 246); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 49.688px 0px; margin-bottom: 23px;"><div class="direct__img-w" style="width: 159px; height: 143px; flex: 0 0 auto; border-radius: 24.844px; margin-right: 58px; overflow: hidden;"><img src="img/direct-8.jpg" style="object-fit: cover; width: 100%; height: 100%;"></div><div class="direct__title" style="color: rgb(20, 20, 20); font-size: 32px; font-weight: 600; width: 40%; flex: 0 0 auto;">Аудит IT-инфраструктуры и проектов</div><div class="direct__text" style="padding-left: 41px; color: rgb(0, 0, 0); font-size: 24px; line-height: 1.3; flex: 1 1 auto;">
+Заметное событие в отрасли информационной безопасности, благодаря высокой деловой репутации и её членов, компаний-лидеров рынка и лучших экспертов.</div></a><a class="direct__item" style="display: flex; align-items: center; padding: 18px 25px 23px; border-radius: 24.844px; background: rgb(246, 246, 246); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 49.688px 0px; margin-bottom: 23px;"><div class="direct__img-w" style="width: 159px; height: 143px; flex: 0 0 auto; border-radius: 24.844px; margin-right: 58px; overflow: hidden;"><img src="img/direct-9.jpg" style="object-fit: cover; width: 100%; height: 100%;"></div><div class="direct__title" style="color: rgb(20, 20, 20); font-size: 32px; font-weight: 600; width: 40%; flex: 0 0 auto;">Внедрение систем управления взаимоотношениями с клиентами (CRM)</div><div class="direct__text" style="padding-left: 41px; color: rgb(0, 0, 0); font-size: 24px; line-height: 1.3; flex: 1 1 auto;">
+Заметное событие в отрасли информационной безопасности, благодаря высокой деловой репутации и её членов, компаний-лидеров рынка и лучших экспертов.</div></a><a class="direct__item" style="display: flex; align-items: center; padding: 18px 25px 23px; border-radius: 24.844px; background: rgb(246, 246, 246); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 49.688px 0px; margin-bottom: 23px;"><div class="direct__img-w" style="width: 159px; height: 143px; flex: 0 0 auto; border-radius: 24.844px; margin-right: 58px; overflow: hidden;"><img src="img/direct-10.jpg" style="object-fit: cover; width: 100%; height: 100%;"></div><div class="direct__title" style="color: rgb(20, 20, 20); font-size: 32px; font-weight: 600; width: 40%; flex: 0 0 auto;">Внедрение систем повышения эффективности (CPM)</div><div class="direct__text" style="padding-left: 41px; color: rgb(0, 0, 0); font-size: 24px; line-height: 1.3; flex: 1 1 auto;">
+Заметное событие в отрасли информационной безопасности, благодаря высокой деловой репутации и её членов, компаний-лидеров рынка и лучших экспертов.</div></a><a class="direct__item" style="display: flex; align-items: center; padding: 18px 25px 23px; border-radius: 24.844px; background: rgb(246, 246, 246); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 49.688px 0px; margin-bottom: 23px;"><div class="direct__img-w" style="width: 159px; height: 143px; flex: 0 0 auto; border-radius: 24.844px; margin-right: 58px; overflow: hidden;"><img src="img/direct-11.jpg" style="object-fit: cover; width: 100%; height: 100%;"></div><div class="direct__title" style="color: rgb(20, 20, 20); font-size: 32px; font-weight: 600; width: 40%; flex: 0 0 auto;">Поставка оборудования ведущих мировых производителей</div><div class="direct__text" style="padding-left: 41px; color: rgb(0, 0, 0); font-size: 24px; line-height: 1.3; flex: 1 1 auto;">
+Заметное событие в отрасли информационной безопасности, благодаря высокой деловой репутации и её членов, компаний-лидеров рынка и лучших экспертов.</div></a></div></div></div><div class="imp" style="padding-top: 91px; padding-bottom: 82px;"><div class="contain"><h2 style="color: rgb(0, 0, 0); font-size: 64px; font-weight: 700; margin-bottom: 50px;" class="h2">Импортозамещение в ИТ
+</h2><p style="color: rgb(0, 0, 0); font-size: 32px; line-height: 1.3;" class="p"><a class="w-a redbord">ИТ решения</a>, системы и инструменты, которые способны прямо сейчас решить самые горящие задачи по замещению западных приложений. Они помогут не потерять в устойчивости бизнеса, продолжить критично важные процессы и поддержать бесперебойную работу.
+</p><div class="imp__row" style="margin-top: 58px; display: flex; gap: 30px;"><div class="imp__item" style="width: 33.333%; border-radius: 15px; background: rgb(234, 247, 253); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px; padding: 39px 28px 28px;"><div class="imp__top" style="display: flex;"><div class="imp__img-w" style="margin-right: 47px; flex: 0 0 auto; width: 92px;"><img src="img/imp-1.svg" style="max-width: 100%;" class="imp__img"></div><div class="imp__title" style="color: rgb(0, 0, 0); font-size: 32px; font-weight: 600; min-height: 155px; margin-bottom: 18px;">Проанализируем ИТ-инфраструктуру</div></div><div class="imp__text" style="color: rgb(0, 0, 0); font-size: 24px; font-weight: 500; padding-left: 139px; line-height: 1.2;">Проведем аудит существующего ИТ-ландшафта, чтобы понять, какие системы перспективно развивать и поддерживать, а какие — заменять на российские.
+</div></div><div class="imp__item" style="width: 33.333%; border-radius: 15px; background: rgb(234, 247, 253); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px; padding: 39px 28px 28px;"><div class="imp__top" style="display: flex;"><div class="imp__img-w" style="margin-right: 47px; flex: 0 0 auto; width: 92px;"><img src="img/imp-2.svg" style="max-width: 100%;" class="imp__img"></div><div class="imp__title" style="color: rgb(0, 0, 0); font-size: 32px; font-weight: 600; min-height: 155px; margin-bottom: 18px;">Подберем российские аналоги ПО и «железа»</div></div><div class="imp__text" style="color: rgb(0, 0, 0); font-size: 24px; font-weight: 500; padding-left: 139px; line-height: 1.2;">Сформируем целевую архитектуру и программу проектов с четким таймингом и приоритетами.
+</div></div><div class="imp__item" style="width: 33.333%; border-radius: 15px; background: rgb(234, 247, 253); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px; padding: 39px 28px 28px;"><div class="imp__top" style="display: flex;"><div class="imp__img-w" style="margin-right: 47px; flex: 0 0 auto; width: 92px;"><img src="img/imp-3.svg" style="max-width: 100%;" class="imp__img"></div><div class="imp__title" style="color: rgb(0, 0, 0); font-size: 32px; font-weight: 600; min-height: 155px; margin-bottom: 18px;">Обеспечим перевнедрение, настройку и запуск систем</div></div><div class="imp__text" style="color: rgb(0, 0, 0); font-size: 24px; font-weight: 500; padding-left: 139px; line-height: 1.2;">Создадим решения на базе отечественного ПО и оборудования, перенесем данные, настроим интеграции и обучим пользователей.
+</div></div></div><div class="imp__btn-w" style="margin-top: 68px; display: flex; align-items: flex-start; justify-content: center;"><a class="btn" style="display: inline-flex; align-items: center; justify-content: center; color: rgb(255, 255, 255); text-align: center; font-size: 24px; font-weight: 600; border-radius: 15px; background: rgb(7, 115, 189); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px; height: 103px; min-width: 428px; padding-left: 40px; padding-right: 40px;">Отправить запрос</a><a class="btn-hover" style="display: inline-flex; align-items: center; justify-content: center; color: rgb(255, 255, 255); text-align: center; font-size: 24px; font-weight: 600; border-radius: 15px; background: rgb(58, 234, 247); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px; height: 103px; min-width: 428px; padding-left: 40px; padding-right: 40px;">Отправить запрос</a></div></div></div><div class="tabs-partners" style="padding-top: 82px; padding-bottom: 58px;"><div class="contain"><div class="tabs scard-main__tabs">
+<ul class="tabs__list" style="display: flex; margin-bottom: 80px;">
+<li class="tabs__list-item active" style="color: rgb(7, 115, 189); font-size: 64px; font-weight: 700; margin-right: 104px; display: inline-block; padding-bottom: 10px; padding-left: 5px; padding-right: 5px; border-bottom: 5px solid rgb(7, 115, 189); border-top-color: rgb(7, 115, 189); border-right-color: rgb(7, 115, 189); border-left-color: rgb(7, 115, 189);">Партнеры</li>
+<li class="tabs__list-item" style="color: rgb(0, 0, 0); font-size: 64px; font-weight: 300; margin-right: 104px; display: inline-block; 
+padding-left: 5px; padding-right: 5px; padding-bottom: 10px;">Заказчики</li>  
+</ul>
+<ul class="tabs__content-list">
+<li class="tabs__content-list-item active"><div class="partners__row" style="display: flex; flex-wrap: wrap; margin-left: -20px; margin-right: -20px;"><div class="partners__item" style="width: 16.6666%; padding-left: 20px; padding-right: 20px; margin-bottom: 30px; display: flex; justify-content: center;"><img src="img/logo-1.png"></div><div class="partners__item" style="width: 16.6666%; padding-left: 20px; padding-right: 20px; margin-bottom: 30px; display: flex; justify-content: center;"><img src="img/logo-2.png"></div><div class="partners__item" style="width: 16.6666%; padding-left: 20px; padding-right: 20px; margin-bottom: 30px; display: flex; justify-content: center;"><img src="img/logo-3.png"></div></div></li>
+<li class="tabs__content-list-item">22</li>  
+</ul>
+</div></div></div><div class="conts" style="padding-top: 88px; padding-bottom: 69px;"><div class="contain"><div class="conts__row" style="display: flex;"><div class="conts__l" style="width: 30%; flex: 0 0 auto; margin-right: 30px; display: inline-flex; flex-direction: column; padding-bottom: 22px;"><h2 class="h2">Контакты</h2><div class="conts__item" style="margin-bottom: 32px;"><div class="conts__lbl" style="color: rgb(139, 139, 139); font-size: 20px; font-weight: 500; margin-bottom: 14px;">Телефон</div><a class="conts__phone" style="color: rgb(5, 4, 4); font-size: 36px; font-weight: 500; padding-left: 51px; background-image: url(&quot;img/cphone.png&quot;); background-repeat: no-repeat; background-position: left center;">+7 (499) 703-41-91</a></div><div class="conts__item" style="margin-bottom: 32px;"><div class="conts__lbl" style="color: rgb(139, 139, 139); font-size: 20px; font-weight: 500; margin-bottom: 14px;">Адрес:</div><p class="conts__adress" style="background-image: url(&quot;img/cgeo.png&quot;); background-repeat: no-repeat; background-position: left center; padding-left: 49px; color: rgb(5, 4, 4); font-size: 24px; font-weight: 500;">Московская область, Ленинский район, г. Видное, ул. Донбасская, д. 2</p></div><div class="copy" style="color: rgb(5, 4, 4); font-size: 24px; font-weight: 500; margin-top: auto;">© 2014 ООО "СТИ Инжиниринг</div></div><div class="conts__r" style="width: 60%; flex: 1 1 auto; display: flex; gap: 30px; align-items: flex-start;"><div class="conts__map" style="width: 50%; flex: 0 0 auto; border-radius: 30px; overflow: hidden; height: 724px;"><script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A507a09831d2e9bb058a9a5d1d45cb04d06377fb89cae997015db3fc81f02752f&amp;width=700&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script></div><div class="conts__form-w" style="flex: 1 1 auto; border-radius: 30px; opacity: 1; background: linear-gradient(rgba(198, 198, 198, 0.5) 0%, rgba(229, 233, 236, 0) 100%); box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px 0px; margin-bottom: 0px; margin-top: 0px; width: 100%; padding: 63px 40px 48px; position: relative; z-index: 2;"><div class="w-row redbord" style="color: rgb(0, 0, 0); text-shadow: rgba(0, 0, 0, 0.15) 0px 4px 30px; font-size: 40px; font-weight: 700; line-height: 0.8; margin-bottom: 15px;">Написать нам</div><div class="w-row redbord" style="color: rgb(0, 0, 0); font-size: 24px; line-height: 1.3; margin-bottom: 30px;">Заполните форму и в течение 15 минут с вами свяжется наш специалист</div><form class="conts__form" style=""><input class="conts__input" type="text" placeholder="Ваше имя" style="border-radius: 15px; background: rgb(255, 255, 255); height: 92px; width: 100%; padding-left: 33px; padding-right: 33px; color: rgb(89, 89, 89); font-size: 20px; margin-bottom: 29px;"><input class="conts__input" type="text" placeholder="Ваш телефон" style="border-radius: 15px; background: rgb(255, 255, 255); height: 92px; width: 100%; padding-left: 33px; padding-right: 33px; color: rgb(89, 89, 89); font-size: 20px; margin-bottom: 29px;"><input class="conts__input" type="text" placeholder="Ваш вопрос" style="border-radius: 15px; background: rgb(255, 255, 255); height: 92px; width: 100%; padding-left: 33px; padding-right: 33px; color: rgb(89, 89, 89); font-size: 20px; margin-bottom: 29px;"><a class="form__btn" style="display: inline-flex; align-items: center; justify-content: center; color: rgb(255, 255, 255); text-align: center; font-size: 24px; font-weight: 600; border-radius: 15px; background: rgb(7, 115, 189); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 0px; height: 103px; padding-left: 20px; padding-right: 20px; width: 100%;">Получить консультацию</a></form><div class="form-bg" style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; position: absolute; z-index: -1; left: 30%; top: 200px;
+"><img src="img/form-bg.png" style="position: absolute;"></div></div></div></div></div></div></div>
+
+
+  <div class="dop-info">
+
+
+
+
+    <div class="contain">
+
+
+
+
+      <p>Сохранения</p>
+      <p>Обновить страницу <br>
+        кликнуть на любой блок верстки<br>
+        Нажать alt + f3<br>
+        Выбрать последнее сохраниение или другое<br>
+
+
+      </p>
+      <p>font-family: 'Verdana', sans-serif;</p>
+      <p>background-size: cover;</p>
+      <p>
+        display: inline-flex; <br>
+        width: calc(100% - 5px);
+      </p>
+      <p>        
+      font-weight: 500;</p>
+      <p>   
+        background-color: #000; <br> 
+        background-color: rgba(#fff, 0.77);  <br>    
+        flex-grow: 1;
+        flex: none;
+      </p>   
+      <p>
+        border-bottom: 1px solid #ccc; - Нижний <br>
+        border-top: 1px solid #ccc; - Верхний <br>
+        border-left: 1px solid #ccc; - Левый <br>
+        border-right: 1px solid #ccc; - Правый <br>
+        border: none; - Нету <br>
+      </p>
+
+    </div>
+  </div>
+
+  <div class="form form-my">
+      <!--label>
+       Class Name <br>
+       <input type="text" class="class-name">
+     </label-->
+     <label>
+       CSS Styless <br>
+       <textarea class="styless"></textarea>
+       <!--input type="text" class="styless"-->
+     </label>
+     <label>
+       Add new Text + Enter <br>
+       <textarea class="text_val_add"></textarea>       
+     </label>
+     <!--span class="butt_add_text">OK</span-->
+
+     <br>
+     <label>
+      Placeholder <br>
+      <input type="text" class="placeholder">
+    </label>
+
+
+
+    <label>
+     <b>Width</b> <br>
+     <input type="text" class="width">
+   </label>
+   <label>
+     <b>Height</b> <br>
+     <input type="text" class="height">
+   </label>
+
+   <label>
+     <!-- <b>Calc</b> <br> -->
+     <b>Paddings/-Margins</b> <br>
+     <!-- <input type="text" class="widthCalc" value="calc(100% / 3 - 10px)"> -->     
+     <input type="text" class="padmargs" value="">
+   </label>
+
+
+
+
+   <label>
+     <b>Font-size</b>
+     <input type="text" class="fSize" placeholder="13px">
+   </label>
+   <label>
+     <b>Line-height</b>
+     <input type="text" class="line_height" placeholder="13px">
+   </label> 
+   <label>
+     <b>Font-weight</b>
+     <input type="text" class="fWeight" placeholder="600">
+   </label>
+
+
+   <label>
+     Color <br>
+     <input type="text" class="color">
+   </label>
+   <label>
+     Background-color <br>
+     <input type="text" class="bgColor">
+   </label>
+
+
+
+
+   <br>
+   <span class="group group-ma-pa group-margin">  
+    <span class="ma-pa-span ma-pa-hor ma-pa-gap">
+      <input type="text" class="gap" placeholder="">
+      <input type="text" class="margin_top" placeholder="">
+    </span><!--ma-pa-top-->
+    <span class="ma-pa-span ma-pa-vert">        
+      <input type="text" class="margin_left" placeholder="">
+      <input type="text" class="margin_right" placeholder="">
+    </span><!--ma-pa-span-->
+    <span class="ma-pa-span ma-pa-hor">    
+      <input type="text" class="margin_bottom" placeholder="">
+    </span>
+  </span>    
+  <span class="ma-span">
+    <input type="checkbox" class="mla"> 
+    <input type="checkbox" class="ma"> 
+    <input type="checkbox" class="mra">    
+  </span>
+  <span class="group group-ma-pa group-padding">  
+    <span class="ma-pa-span ma-pa-hor">
+      <input type="text" class="padding_top" placeholder="">
+    </span><!--ma-pa-top-->
+    <span class="ma-pa-span ma-pa-vert">        
+      <input type="text" class="padding_left" placeholder="">
+      <input type="text" class="padding_right" placeholder="">
+    </span><!--ma-pa-span-->
+    <span class="ma-pa-span ma-pa-hor">
+      <input type="text" class="padding_bottom" placeholder="">
+    </span>
+  </span>
+  <span class="group group-position">
+   <span>Position</span>
+
+   <label>
+     <input class="posre" type="radio" name="change_status_select" value="1"/>Relat
+   </label>
+   <label>
+     <input class="posa" type="radio" name="change_status_select" value="2"/>Absol
+   </label>
+   <label>
+     <input class="possta" type="radio" name="change_status_select" value="3"/>Static
+   </label>
+ </span> 
+ <span class="group group-ma-pa group-position-size">  
+  <span class="ma-pa-span ma-pa-hor">
+    <input type="text" class="position_top" placeholder="">
+  </span><!--ma-pa-top-->
+  <span class="ma-pa-span ma-pa-vert">        
+    <input type="text" class="position_left" placeholder="">
+    <input type="text" class="position_right" placeholder="">
+  </span><!--ma-pa-span-->
+  <span class="ma-pa-span ma-pa-hor">    
+    <input type="text" class="position_bottom" placeholder="">
+  </span>
+</span>
+
+<span class="group group-text-align">
+  <span>Text-align:</span>
+  <label>
+    <input class="tal" type="radio" name="change_status_select12" value="1"/>Left
+  </label>
+  <label>
+   <input class="tac" type="radio" name="change_status_select12" value="2"/>Centr
+ </label>     
+ <label for="">
+   <input class="tar" type="radio" name="change_status_select12" value="2"/>Right
+ </label>     
+</span>
+
+<span class="bordur">
+  <label>
+    Border-width
+    <input type="text" class="bordwidth">
+  </label>
+  <label>
+    Border-color
+    <input type="text" class="bordcol">
+  </label>  
+</span>  
+<span class="bordside tools tools2">
+  <label>
+    <input class="bordaround" type="radio" name="change_status_select" value="1"/>
+    <span>A</span>
+  </label>  
+  <label>
+    <input class="bordleft" type="radio" name="change_status_select" value="2"/>
+    <span ><svg class="rot-90" viewBox="0 0 16 16" id="align_content_start">
+      <path d="M14 3H2V1h12v2zM9 15V9h3L8 5 4 9h3v6h2z"></path>
+    </svg></span>
+  </label>
+  <label>
+    <input class="bordtop" type="radio" name="change_status_select" value="3"/>
+    <span><svg viewBox="0 0 16 16" id="align_content_start">
+      <path d="M14 3H2V1h12v2zM9 15V9h3L8 5 4 9h3v6h2z"></path>
+    </svg></span>
+  </label>
+  <label>
+    <input class="bordbot" type="radio" name="change_status_select" value="4"/>
+    <span >      
+      <svg class="rot180" viewBox="0 0 16 16" id="align_content_start">
+        <path d="M14 3H2V1h12v2zM9 15V9h3L8 5 4 9h3v6h2z"></path>
+      </svg>
+    </span>
+  </label>
+  <label>
+    <input class="bordright" type="radio" name="change_status_select" value="5"/>
+    <span > <svg class="rot90" viewBox="0 0 16 16" id="align_content_start">
+      <path d="M14 3H2V1h12v2zM9 15V9h3L8 5 4 9h3v6h2z"></path>
+    </svg></span>
+  </label>
+</span>
+<label>
+  <input type="checkbox" class="bornone"> 
+  <span style="display: inline-block; padding-top: 5px; padding-left: 5px; font-style: italic;">Border: none</span>
+</label>
+
+<br>
+<span class="group group-overflow">
+  <span>Overflow</span>
+  <label>
+   <input class="overflow1" type="radio" name="change_status_select" value="1"/>Hidden
+ </label>
+ <label>
+   <input class="overflow2" type="radio" name="change_status_select" value="2"/>Visible
+ </label>     
+</span>          
+
+
+
+<label>
+ Z-index <br>
+ <input type="text" class="z_index" placeholder="">
+</label>
+
+<label>
+ Opacity <br>
+ <input type="text" class="opacity" placeholder="">
+</label>
+
+<span class="group group-bgpos">
+ <span class="group-title"><b>BG-POS</b></span>
+ <label>
+   <input class="ltop" type="radio" name="change_status_select" value="1">
+   <span class="bgpos__butt">
+    <span class="bgpos__butt-sq bgpos__butt-sq--lt"></span>
+  </span><!--bgpos__butt-->
+</label>
+<label>
+ <input class="topce" type="radio" name="change_status_select" value="2">
+ <span class="bgpos__butt">
+  <span class="bgpos__butt-sq bgpos__butt-sq--ct"></span>
+</span><!--bgpos__butt-->
+</label>
+<label>
+ <input class="ritop" type="radio" name="change_status_select" value="3">
+ <span class="bgpos__butt">
+   <span class="bgpos__butt-sq bgpos__butt-sq--rt"></span>
+ </span><!--bgpos__butt-->
+</label>
+<label>
+ <input class="ricentr" type="radio" name="change_status_select" value="4">
+ <span class="bgpos__butt">
+   <span class="bgpos__butt-sq bgpos__butt-sq--rc"></span>
+ </span><!--bgpos__butt-->
+</label>
+<label>
+ <input class="ribot" type="radio" name="change_status_select" value="5">
+ <span class="bgpos__butt">
+   <span class="bgpos__butt-sq bgpos__butt-sq--rb"></span>
+ </span><!--bgpos__butt-->
+</label>
+<label>
+ <input class="botcentr" type="radio" name="change_status_select" value="6">
+ <span class="bgpos__butt">
+   <span class="bgpos__butt-sq bgpos__butt-sq--bc"></span>
+ </span><!--bgpos__butt-->
+</label>
+<label>
+ <input class="lebot" type="radio" name="change_status_select" value="7">
+ <span class="bgpos__butt">
+   <span class="bgpos__butt-sq bgpos__butt-sq--lb"></span>
+ </span><!--bgpos__butt-->
+</label>
+<label>
+ <input class="lecentr" type="radio" name="change_status_select" value="8">
+ <span class="bgpos__butt">
+   <span class="bgpos__butt-sq bgpos__butt-sq--lc"></span>
+ </span><!--bgpos__butt-->
+</label>
+</span>
+
+<label>
+ Min-height <br>
+ <input type="text" class="minheight">
+</label>
+
+<label>
+  Max-width px % <br>
+  <input type="text" class="maxwidth">
+</label>
+
+<span class="group group-text-align">
+  <span>Object-fit:</span>
+  <label>
+    <input class="objcov" type="radio" name="change_status_select12" value="1"/>Cover
+  </label>  
+</span>
+
+
+<span class="group group-float">
+ <span>Float</span>
+ <label>
+   <input class="float1" type="radio" name="change_status_select" value="1"/>Left
+ </label>
+ <label>
+   <input class="float3" type="radio" name="change_status_select" value="3"/>None
+ </label>
+ <label>
+   <input class="float2" type="radio" name="change_status_select" value="2"/>Right
+ </label>     
+</span>
+
+
+<label>
+  Value <br>
+  <input type="text" class="submit_value">
+</label>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="w-row"><div class="w-col-2"></div><div class="w-col-2"></div><div class="w-col-2"></div><div class="w-col-2"></div><div class="w-col-2"></div><div class="w-col-2"></div></div><!--w-row-->
+
+
+<div class="left-tools">
+  <span class="copy-add">
+    <span class="copy">Copy</span>
+    <span class="parent">Parent</span>
+    <span class="add">Add</span>  
+    <span class="rw">rw</span>  
+  </span><!--copy-add-->
+  <span class="colss">
+    <span class="coll coll-1" title="alt + 1">1</span>
+    <span class="coll coll-2">2</span>
+    <span class="coll coll-3">3</span>
+    <span class="coll coll-4">4</span>
+    <span class="coll coll-6">6</span>  
+    <input type="text" class="norm" value="<br>">
+    <span class="coll coll-8" title="alt + 3">-w</span>
+    <span class="coll coll-7" title="alt + 2"><b>contain</b></span>
+    <span class="coll coll-b"><b>b</b></span>
+    <span class="coll coll-p"><b>p</b></span>
+    <span class="coll coll-w"><b>wrap</b></span> 
+    <span class="coll coll-aw"><b>a wrap</b></span> 
+    <!--input type="text" class="tag_name" placeholder="Имя тэга"-->
+  </span><!--colss-->
+  <div class="form form-my2">    
+    <div class="coluu-w">
+      <span class="coluu" id="coluu_2">
+        <span></span>
+        <span></span>
+      </span>
+      <span class="coluu" id="coluu_3">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <span class="coluu" id="coluu_4">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <span class="coluu" id="coluu_5">
+        5
+      </span>
+      <span class="coluu" id="coluu_6">
+        6
+      </span>
+      <span class="coluu" id="coluu_w">
+        W
+      </span>
+    </div>
+    <!--span class="classs">none</span><br-->
+      <span class="classs2">none</span>
+  <!--label>
+   Class Name <br>
+   <input type="text" class="class-name2">
+ </label>
+ <label>
+   Text <br>
+   <textarea class="text_val2"></textarea>  
+ </label>
+ <label>
+   CSS Styless <br>
+   <textarea class="styless2"></textarea>   
+ </label> 
+ <span class="butt2">OK</span-->
+ 
+
+
+ <span class="displ tools tools2">
+
+  <label>    
+    <input class="dblock" type="radio" name="change_status_select" value="1"/>
+    <span class="grayactttt">B</span>
+  </label>
+
+
+  <label>
+    <input class="dinlineblock" type="radio" name="change_status_select" value="3"/>
+    <span>IB</span>
+  </label>
+
+  <label>
+    <input class="dflex" type="radio" name="change_status_select" value="5"/>    
+    <span class="dflex-iconnnn">F</span>
+  </label>
+
+  <label>
+    <input class="iflex" type="radio" name="change_status_select" value="6"/>
+    <span>IF</span>
+  </label>
+
+  <label>    
+    <input class="dinline" type="radio" name="change_status_select" value="2"/>
+    <span>I</span>
+  </label>
+
+  <label class="ml10">
+    <input class="grow_none" type="radio" name="grow_1" value="1"/>
+    <span class="w50s">N</span>
+  </label>
+  <label>
+    <input class="grow1" type="radio" name="grow_1" value="1"/>
+    <span class="w50s">1</span>
+  </label>
+  <!--label>
+    <span>N</span>
+    <input class="dnone" type="radio" name="change_status_select" value="4"/>
+  </label--> 
+</span>
+
+<span class="group group-alignitems mtaa tools tools2">  
+  <label>
+    <input class="ai1" type="radio" name="change_status_select" value="1">
+    <span><svg viewBox="0 0 16 16" id="align_content_start">
+      <path d="M14 3H2V1h12v2zM9 15V9h3L8 5 4 9h3v6h2z"></path>
+    </svg></span>
+  </label>
+  <label>
+   <input class="ai2" type="radio" name="change_status_select" value="2">
+   <span><svg viewBox="0 0 16 16" id="align_content_center">
+    <path d="M4 1l4 4 4-4H4zm0 14l4-4 4 4H4zm10-8H2v2h12V7z"></path>
+  </svg></span>
+</label>
+<label>
+ <input class="ai3" type="radio" name="change_status_select" value="3">
+ <span><svg viewBox="0 0 16 16" id="align_content_end">
+  <path d="M9 1v6h3l-4 4-4-4h3V1h2zm5 14v-2H2v2h12z"></path>
+</svg></span>
+</label>
+
+
+
+
+
+<label class="ml10">
+  <input class="flwrap" type="radio" name="change_status_select12" value="1"/>
+  <span>W</span>
+</label> 
+<label>
+  <input class="flwrap2" type="radio" name="change_status_select12" value="2"/>
+  <span>NO</span>
+</label>   
+
+
+
+
+
+
+</span>
+
+<span class="group group-alignitems mtaa tools tools2">  
+  <label>
+    <input class="jc1" type="radio" name="change_status_select" value="1">
+    <span><svg viewBox="0 0 16 16" id="justify_start">
+      <path d="M2 4V2h6v2H2zm0 5V7h12v2H2zm0 3v2h6v-2H2z"></path>
+    </svg></span>
+  </label>
+  <label>
+   <input class="jc4" type="radio" name="change_status_select" value="2">
+   <span><svg viewBox="0 0 16 16" id="justify_center">
+    <path d="M5 2v2h6V2H5zM2 9V7h12v2H2zm3 5v-2h6v2H5z"></path>
+  </svg></span>
+</label>
+<label>
+ <input class="jc3" type="radio" name="change_status_select" value="3">
+ <span><svg viewBox="0 0 16 16" id="justify_end">
+  <path d="M8 2v2h6V2H8zM2 9V7h12v2H2zm6 5v-2h6v2H8z"></path>
+</svg></span>
+</label>
+<label>
+ <input class="jc2" type="radio" name="change_status_select" value="2">
+ <span class="sbetw"></span>
+</label>
+<label class="ml10">
+  <input class="fd_col" type="radio" name="fd_column" value="col"/>
+  <span>col</span>
+</label>  
+<label>
+  <input class="fd_row" type="radio" name="fd_column" value="row"/>
+  <span>row</span>
+</label> 
+</span>
+
+
+<label>
+  <span class="img">IMG</span>    
+  <input type="file" class="type_file">    
+</label>
+<span class="butospan obb_img" title="alt + O">O</span>
+<label>
+  <span class="bg-img">BG-IMG</span>
+  <input type="file" class="type_file2">
+</label>
+<label for="">
+  <span class="radius"></span>
+</label>
+<input type="text" class="radius_input">
+<label for="">
+  <span class="before">Before</span>
+</label>
+<span class="butospan link" title="alt + L">a</span>
+<span class="butospan span" title="alt + S">span</span>
+<label for="">
+  <span class="butospan but_form but_form_1">Form</span>
+  <span class="butospan but_form but_form_2">Form 2</span>
+  <span class="butospan but_text">Text</span>
+  <span class="butospan but_textarea">Area</span>    
+  <span class="butospan but_subm">Submit</span>    
+</label>
+
+
+
+<label for="">
+  <span class="butospan but_ul">ul</span>    
+  <span class="butospan but_li">li</span>
+  <span class="butospan but_dot">dot</span>
+</label>  
+  <!--label>
+   <input type="checkbox" class="mha"> 
+   <span style="display: inline-block; padding-top: 5px; padding-left: 5px;">Min-height: auto</span>
+ </label-->
+ <!--label>
+   <input type="checkbox" class="fsi"> 
+   <span style="display: inline-block; padding-top: 5px; padding-left: 5px; font-style: italic;">Font-style: italic</span>
+ </label-->
+
+
+
+
+
+
+
+
+
+ <span class="butospan stroove">st id rem</span>
+ <span class="butospan copy-html">copy htm</span>
+</div>
+
+
+
+
+
+
+
+
+</div><!--left-tools-->
+
+
+
+<div class="eye"></div>
+<div class="eye2"></div>
+<a href="#" class="save">save</a>
+<div class="top_pan">
+  <span class="colla coll-h1">h1</span>
+  <span class="colla coll-h2">h2</span>
+  <span class="colla coll-h3">h3</span>
+  <span class="colla coll-h4">h4</span>
+  <span class="colla coll-h5">h5</span>
+  <span class="colla coll-h6">LBL</span>
+  <span class="colla coll-bq">blockquote</span>
+
+  <span class="colla colla-i">  
+   <input type="text" class="class-name"> 
+ </span>
+
+
+ <span class="remove">X</span>
+ <span class="flora">
+  <span class="colla coll_table">Таблица</span>
+  <span class="colla coll_thead">Заголовок</span>
+  <span class="colla coll_tbody">Тело</span>
+  <span class="colla coll_tr">Ряд</span>
+  <span class="colla coll_td">Ячейка</span>
+</span>
+<textarea class="text_val_add_2"></textarea>
+<textarea class="styless_2"></textarea>
+</div><!--top_pan-->
+
+
+
+
+<script src="js/jquery-3.4.1.min.js"></script>  
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.textchange.min.js"></script>
+
+
+
+
+<script src="js/common1.js"></script>
+<!--Для адаптации-->
+<!-- <script src="js/common-resp.js"></script> -->
+
+</body>
+</html>
