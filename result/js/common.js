@@ -1,6 +1,6 @@
 jQuery(document).ready(function( $ ) {
 
-  
+
 
   $('body').click(function () {
     if( $(".toggle-mnu").hasClass("on") ){
@@ -119,8 +119,22 @@ $('.eye-3').click(function (e) {
   $('a[href*=\\#]:not([href=\\#])').click(function () {
     elementClick = $(this).attr("href");
     destination = $(elementClick).offset().top;
-    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 85}, 1100);
+    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 0}, 1100);
     return false;
+  });
+
+
+
+
+  var topPos = $('.top').offset().top; 
+  $(window).scroll(function() {
+    var top = $(document).scrollTop();
+    if (top > topPos) {
+      $('.top').addClass('fixed');      
+    }
+    else {
+      $('.top').removeClass('fixed');     
+    }
   });
 
 
@@ -153,6 +167,21 @@ $('.eye-3').click(function (e) {
   }
 
   tabs('.partners__tabs');
+
+
+  $('[data-fancybox="gallery"]').fancybox({
+    arrows: true,
+    infobar: true,
+    smallBtn: true,
+    toolbar: true,
+    iframe : {
+      css : {
+        width : '950px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
 
   $('.accordion-header').toggleClass('inactive-header');
   $('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');
