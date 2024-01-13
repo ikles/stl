@@ -203,4 +203,3 @@ $('.eye-3').click(function (e) {
   return false;
 
 }); //ready
-
